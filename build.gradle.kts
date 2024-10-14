@@ -35,22 +35,12 @@ dependencies {
     // logger
     implementation("io.github.oshai:kotlin-logging-jvm:7.0.0")
 
-    // Spring Kafka
-    implementation("org.springframework.kafka:spring-kafka")
-
     // Spring Cloud
     implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
     // Jackson & Kotlin
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-
-    // QueryDSL
-    // 필요 없으면 삭제
-    implementation("com.querydsl:querydsl-jpa:5.0.0:jakarta")
-    kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
-    kapt("jakarta.annotation:jakarta.annotation-api")
-    kapt("jakarta.persistence:jakarta.persistence-api")
 
     // MySQL
     runtimeOnly("com.mysql:mysql-connector-j")
